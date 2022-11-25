@@ -14809,20 +14809,111 @@ Given a text prompt, participants' systems shall generate a list of recommended 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
+</div></section><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_remove_input">
 
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
 
-     </div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>collaborative</th>
+      <th>pid</th>
+      <th>modified_at</th>
+      <th>num_tracks</th>
+      <th>num_albums</th>
+      <th>num_followers</th>
+      <th>tracks</th>
+      <th>num_edits</th>
+      <th>duration_ms</th>
+      <th>num_artists</th>
+      <th>description</th>
+      <th>track_name</th>
+      <th>artist_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bob Dylan</td>
+      <td>false</td>
+      <td>549000</td>
+      <td>1454803200</td>
+      <td>75</td>
+      <td>65</td>
+      <td>1</td>
+      <td>{'pos': 0, 'artist_name': 'Bob Dylan', 'track_...</td>
+      <td>28</td>
+      <td>18425368</td>
+      <td>39</td>
+      <td>NaN</td>
+      <td>Boots of Spanish Leather</td>
+      <td>Bob Dylan</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bob Dylan</td>
+      <td>false</td>
+      <td>549000</td>
+      <td>1454803200</td>
+      <td>75</td>
+      <td>65</td>
+      <td>1</td>
+      <td>{'pos': 1, 'artist_name': 'Bob Dylan', 'track_...</td>
+      <td>28</td>
+      <td>18425368</td>
+      <td>39</td>
+      <td>NaN</td>
+      <td>Mr. Tambourine Man</td>
+      <td>Bob Dylan</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Bob Dylan</td>
+      <td>false</td>
+      <td>549000</td>
+      <td>1454803200</td>
+      <td>75</td>
+      <td>65</td>
+      <td>1</td>
+      <td>{'pos': 2, 'artist_name': 'Loggins &amp; Messina',...</td>
+      <td>28</td>
+      <td>18425368</td>
+      <td>39</td>
+      <td>NaN</td>
+      <td>Danny's Song</td>
+      <td>Loggins &amp; Messina</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 </div>
+
+</div>
+
+</div>
+
 </div>
 
 </div></section></section><section ><section >
@@ -14932,6 +15023,58 @@ Given a text prompt, participants' systems shall generate a list of recommended 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Markdown</span> <span class="k">as</span> <span class="n">md</span>
+
+<span class="n">md</span><span class="p">(</span><span class="s2">&quot;#### What is Genius.com?&quot;</span><span class="p">)</span>
+
+<span class="n">md</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">track</span><span class="p">[</span><span class="s1">&#39;track_name&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">](</span><span class="s2">&quot;https://genius.com/Bob-dylan-the-times-they-are-a-changin-lyrics&quot;</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>&lt;&gt;:5: SyntaxWarning: &#39;list&#39; object is not callable; perhaps you missed a comma?
+&lt;&gt;:5: SyntaxWarning: &#39;list&#39; object is not callable; perhaps you missed a comma?
+/var/folders/q2/zdnzgg5x4391kpbkgtnb9h900000gn/T/ipykernel_13763/333726908.py:5: SyntaxWarning: &#39;list&#39; object is not callable; perhaps you missed a comma?
+  md([f&#34;{track[&#39;track_name&#39;]}&#34;](&#34;https://genius.com/Bob-dylan-the-times-they-are-a-changin-lyrics&#34;))
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In [36], line 5</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,0,255)">IPython</span><span class="ansi-bold" style="color: rgb(0,0,255)">.</span><span class="ansi-bold" style="color: rgb(0,0,255)">display</span> <span class="ansi-bold" style="color: rgb(0,135,0)">import</span> Markdown <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> md
+<span class="ansi-green-intense-fg ansi-bold">      3</span> md(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">#### What is Genius.com?</span><span style="color: rgb(175,0,0)">&#34;</span>)
+<span class="ansi-green-fg">----&gt; 5</span> md([<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">&#34;</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>track[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">track_name</span><span style="color: rgb(175,0,0)">&#39;</span>]<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">&#34;</span>](<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">https://genius.com/Bob-dylan-the-times-they-are-a-changin-lyrics</span><span style="color: rgb(175,0,0)">&#34;</span>))
+
+<span class="ansi-red-fg">TypeError</span>: &#39;list&#39; object is not callable</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div></div></section><section ><div class="jp-Cell jp-CodeCell jp-Notebook-cell    celltag_remove_input">
 
 <div class="jp-Cell-outputWrapper">
