@@ -2,3 +2,5 @@ spotify_playlist_continuation
 spotify_pictures/
 config.py
 index.ipynb
+ **/*.ipynb_checkpoints/
+**/*.ipynb_checkpoints/
